@@ -1,19 +1,16 @@
 import React from 'react';
 import {
-  StyleSheet,
-  View,
-  Text,
+  StatusBar,
 } from 'react-native';
-
+import 'react-native-gesture-handler';
 import './config/ReactotronConfig';
-
-const styles = StyleSheet.create({
-});
+import Routes from './routes';
 
 const App = () => (
-  <View>
-    <Text>Ola</Text>
-  </View>
+  <>
+    <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
+    <Routes />
+  </>
 );
 
 export default App;
